@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HWpushDemo</string>
+    <string name="set_push_unable">关闭Push</string>
+    <string name="set_push_enable">打开Push</string>
+</resources>

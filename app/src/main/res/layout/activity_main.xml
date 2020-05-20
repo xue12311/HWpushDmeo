@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_get_aaid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="getAAID"
+        android:text="获取 AAID"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_delete_aaid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_delete_aaid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="deleteAAID"
+        android:text="删除 AAID"
+        app:layout_constraintLeft_toRightOf="@id/btn_get_aaid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_get_aaid" />
+
+    <Button
+        android:id="@+id/btn_get_token"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="getToken"
+        android:text="获取 Token"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_delete_token"
+        app:layout_constraintTop_toBottomOf="@id/btn_get_aaid" />
+
+    <Button
+        android:id="@+id/btn_delete_token"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="deleteToken"
+        android:text="删除 Token"
+        app:layout_constraintLeft_toRightOf="@id/btn_get_token"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_get_token" />
+
+    <Button
+        android:id="@+id/btn_add_topic"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="addTopic"
+        android:text="添加 Topic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_delete_topic"
+        app:layout_constraintTop_toBottomOf="@id/btn_get_token" />
+
+    <Button
+        android:id="@+id/btn_delete_topic"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="deleteTopic"
+        android:text="删除 Topic"
+        app:layout_constraintLeft_toRightOf="@id/btn_add_topic"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_add_topic" />
+
+
+    <Button
+        android:id="@+id/btn_turnOnPush"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="getTurnOnPush"
+        android:text="开启推送"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_turnOffPush"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_topic" />
+
+    <Button
+        android:id="@+id/btn_turnOffPush"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="getTurnOffPush"
+        android:text="关闭推送"
+        app:layout_constraintLeft_toRightOf="@id/btn_turnOnPush"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_turnOnPush" />
+
+    <Button
+        android:id="@+id/btn_is_autoInit_enabled"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="isAutoInitEnabled"
+        android:text="is AutoInit Enabled"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_set_autoInit_enabled"
+        app:layout_constraintTop_toBottomOf="@id/btn_turnOnPush" />
+
+    <Button
+        android:id="@+id/btn_set_autoInit_enabled"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="setAutoInitEnabled"
+        android:text="Set AutoInit Enabled"
+        app:layout_constraintLeft_toRightOf="@id/btn_is_autoInit_enabled"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_is_autoInit_enabled" />
+
+    <Button
+        android:id="@+id/btn_generate_intent"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="generateIntentUri"
+        android:text="生成自定义界面uri"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_set_autoInit_enabled"
+        app:layout_constraintTop_toBottomOf="@id/btn_is_autoInit_enabled" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
